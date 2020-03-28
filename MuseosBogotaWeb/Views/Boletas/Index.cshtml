@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MuseosBogotaWeb.Boleta>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoBoleta.NombreTipoEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreBoleta)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoBoleta.NombreTipoEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreBoleta)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idBoleta }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idBoleta }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idBoleta })
+        </td>
+    </tr>
+}
+
+</table>

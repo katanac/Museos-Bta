@@ -1,0 +1,50 @@
+﻿@model MuseosBogotaWeb.Contexto.Detalle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Detalle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Factura.IdFactura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factura.IdFactura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionCompra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBoleta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdBoleta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valorCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valorCompra)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdDetalle }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

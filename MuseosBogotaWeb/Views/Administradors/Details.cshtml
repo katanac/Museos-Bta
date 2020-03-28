@@ -1,0 +1,34 @@
+﻿@model MuseosBogotaWeb.Contexto.Administrador
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Administrador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreAddministrador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreAddministrador)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdAdministrador }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

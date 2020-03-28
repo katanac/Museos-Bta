@@ -1,0 +1,42 @@
+﻿@model MuseosBogotaWeb.Contexto.Factura
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Factura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPago.NombreTipoPago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoPago.NombreTipoPago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCompra)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdFactura }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

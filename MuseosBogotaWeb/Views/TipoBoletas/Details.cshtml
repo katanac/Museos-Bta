@@ -1,0 +1,26 @@
+﻿@model MuseosBogotaWeb.Contexto.TipoBoleta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TipoBoleta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreTipoEvento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreTipoEvento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdTipoBoleta }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

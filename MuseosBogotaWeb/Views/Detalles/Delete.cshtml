@@ -1,0 +1,56 @@
+﻿@model MuseosBogotaWeb.Contexto.Detalle
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Detalle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Factura.IdFactura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factura.IdFactura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionCompra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBoleta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdBoleta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valorCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valorCompra)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

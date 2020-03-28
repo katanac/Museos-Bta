@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MuseosBogotaWeb.Contexto.Evento>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Museo.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoEvento.NombreTipoEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreEvento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CantidadAsistentes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Museo.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoEvento.NombreTipoEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreEvento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CantidadAsistentes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Idevento }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Idevento }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Idevento })
+        </td>
+    </tr>
+}
+
+</table>

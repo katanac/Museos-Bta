@@ -1,0 +1,58 @@
+﻿@model MuseosBogotaWeb.Contexto.Evento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Evento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Museo.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Museo.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoEvento.NombreTipoEvento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoEvento.NombreTipoEvento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreEvento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreEvento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadAsistentes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadAsistentes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Idevento }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

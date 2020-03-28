@@ -1,0 +1,58 @@
+﻿@model MuseosBogotaWeb.Contexto.Reservas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reservas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Factura.IdFactura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factura.IdFactura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoEvento.NombreTipoEvento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoEvento.NombreTipoEvento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaReserva)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaReserva)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numeroBoletas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numeroBoletas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdReserva }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
