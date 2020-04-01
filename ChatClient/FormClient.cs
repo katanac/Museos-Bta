@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace ChatClient
 {
-    public partial class Form1 : Form
+    public partial class FormClient : Form
     {
         System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
 
@@ -13,7 +13,7 @@ namespace ChatClient
 
         string readData = null;
 
-        public Form1()
+        public FormClient()
         {
             InitializeComponent();
         }
@@ -47,13 +47,13 @@ namespace ChatClient
             serverStream.Flush();
 
 
-            Thread ctThread = new Thread(getMessage);
+            Thread ctThread = new Thread(GetMessage);
 
             ctThread.Start();
 
         }
 
-        private void getMessage()
+        private void GetMessage()
         {
             while (true)
             {
@@ -83,10 +83,10 @@ namespace ChatClient
             {
                 this.Invoke(new MethodInvoker(msg));
             }
-            else
-            {
-                //"textBox1.Text" = "textBox1.Text" + Environment.NewLine + " >> " + readData;
-            }
+            //else
+            //{
+            //    "textBox1.Text" = "textBox1.Text" + Environment.NewLine + " >> " + readData;
+            //}
         }
 
     }
