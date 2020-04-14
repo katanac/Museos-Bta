@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MuseosBogotaWeb.Contexto.Administrador">
+    <Position X="0.5" Y="7" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAAABAA=</HashCode>
+      <FileName>Contexto\Administrador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.Boleta">
+    <Position X="0.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAAAAAAGAA=</HashCode>
+      <FileName>Contexto\Boleta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.Detalle">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAQAABAAAAAAAAAAAAAAAAAgAIAIAAAA=</HashCode>
+      <FileName>Contexto\Detalle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.Evento">
+    <Position X="8.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAECAAQAAAEAIAAAAAAAAAAAAAAQAAAAAAABAQA=</HashCode>
+      <FileName>Contexto\Evento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.Factura">
+    <Position X="9.75" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAEAQAAAAAAAQACQAAAAAAAAAEEAAAAAAA=</HashCode>
+      <FileName>Contexto\Factura.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Detalle" />
+      <Property Name="Reservas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.Museo">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAgAAAAgAAAAAAAAAAAgAAAQA=</HashCode>
+      <FileName>Contexto\Museo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Evento" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.Reservas">
+    <Position X="13.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIABAAQDAAAAAAAAIAAAAAAAAAAAAAAAAAgEAAAAAAA=</HashCode>
+      <FileName>Contexto\Reservas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.TipoBoleta">
+    <Position X="5.25" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAEAA=</HashCode>
+      <FileName>Contexto\TipoBoleta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Boleta" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.TipoEvento">
+    <Position X="13" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAQAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contexto\TipoEvento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Evento" />
+      <Property Name="Reservas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.TipoPago">
+    <Position X="6" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAgAAAAAQAA=</HashCode>
+      <FileName>Contexto\TipoPago.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Factura" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MuseosBogotaWeb.Contexto.Usuario">
+    <Position X="5.75" Y="7" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAQAAAAAAAAAAAAGAQAAAAAAAAAAAIgAAAABAAA=</HashCode>
+      <FileName>Contexto\usuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Administrador" />
+      <Property Name="Reservas" />
+      <Property Name="Factura" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
